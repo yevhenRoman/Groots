@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SurveyTitleText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#182639</item>
+    </style>
+
+    <style name="SurveyNormalText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#182639</item>
+    </style>
+
+</resources>

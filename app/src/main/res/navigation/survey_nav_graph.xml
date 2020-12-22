@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/survey_navigation"
+    app:startDestination="@id/welcomeSurveyFragment2">
+    <fragment
+        android:id="@+id/welcomeSurveyFragment2"
+        android:name="com.eugene.groots_test_task.survey.fragments.WelcomeSurveyFragment"
+        android:label="@string/survey"
+        tools:layout="@layout/fragment_welcome_survey" >
+        <action
+            android:id="@+id/action_welcomeSurveyFragment_to_selectOneOptionSurveyFragment"
+            app:destination="@id/selectOneOptionSurveyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectOneOptionSurveyFragment"
+        android:name="com.eugene.groots_test_task.survey.fragments.SelectOneOptionSurveyFragment"
+        android:label="@string/survey"
+        tools:layout="@layout/fragment_select_one_option_survey" >
+        <action
+            android:id="@+id/action_selectOneOptionSurveyFragment_to_priceQuestionSurveyFragment"
+            app:destination="@id/priceQuestionSurveyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/priceQuestionSurveyFragment"
+        android:name="com.eugene.groots_test_task.survey.fragments.PriceQuestionSurveyFragment"
+        android:label="@string/survey"
+        tools:layout="@layout/fragment_price_question_survey" >
+        <action
+            android:id="@+id/action_priceQuestionSurveyFragment_to_welcomeSurveyFragment"
+            app:destination="@id/welcomeSurveyFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
